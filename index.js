@@ -43,6 +43,10 @@ const users = [
   },
 ];
 
+app.get("/", (req, res) => {
+  res.send("Welcome to the Users API!");
+});
+
 app.get("/users", (req, res) => {
   res.json({ users });
 });
